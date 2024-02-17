@@ -1,0 +1,258 @@
+/* ----- RESET ----- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ----- STYLING ----- */
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 23.4375rem;
+  margin: 0 auto;
+}
+
+.result-card {
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 32px 32px;
+}
+
+.your-result {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-number {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(rgba(77, 33, 201, 1), rgba(37, 33, 201, 0));
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-num {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.status {
+  font-size: 1.5rem;
+}
+
+.status-msg {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  margin-top: 8px;
+  padding: 0 2rem;
+}
+
+.summary {
+  color: hsl(224, 30%, 27%);
+}
+
+.summary-card {
+  margin: 1.5rem 1.875rem;
+  align-self: center;
+}
+
+.summary-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.0625rem 16px 1.125rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+}
+
+.sum-icon {
+  display: flex;
+  column-gap: 0.75rem;
+}
+
+.sum-num {
+  color: hsl(224, 30%, 27%, 0.5);
+}
+
+.sum-num span {
+  color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.06);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.06);
+}
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.06);
+}
+
+.btn-continue {
+  border: none;
+  border-radius: 128px;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  padding: 1.0625rem 7.5rem 1rem 7.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-color: hsl(221, 100%, 96%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 46rem;
+    margin: 17.75rem auto;
+    background-color: #fff;
+    border-radius: 2rem;
+  }
+
+  .result-card {
+    width: 23rem;
+    border-radius: 32px;
+    padding-top: 2.375rem;
+  }
+
+  .your-result {
+    font-size: 1.5rem;
+  }
+
+  .result-number {
+    width: 200px;
+    height: 200px;
+    margin-top: 35px;
+    margin-bottom: 1.75rem;
+  }
+
+  .big-num {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin-top: 2.1875rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .status {
+    font-size: 2rem;
+  }
+
+  .status-msg {
+    font-size: 1.125rem;
+    margin-top: 0.875rem;
+  }
+
+  .summary-card {
+    margin: 2.375rem 2.5rem 2.875rem 2.5rem;
+  }
+
+  .summary {
+    font-size: 1.5rem;
+  }
+
+  .summary-item {
+    font-size: 18px;
+  }
+
+  .summary-items {
+    margin-top: 1.5rem;
+  }
+
+  .btn-continue {
+    padding: 1.0625rem 6.6875rem 1rem 6.625rem;
+    margin-top: 2.5625rem;
+    cursor: pointer;
+  }
+
+  .btn-continue:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+}
