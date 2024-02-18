@@ -52,6 +52,10 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -60,7 +64,6 @@ body {
   justify-content: center;
   align-self: center;
   width: 23.4375rem;
-  margin: 0 auto;
 }
 
 .result-card {
